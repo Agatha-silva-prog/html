@@ -1,1 +1,9 @@
 @charset "UTF-8";
+
+h1{
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    margin: auto;
+    display: block;
+}
