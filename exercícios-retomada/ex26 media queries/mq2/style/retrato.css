@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+     background-position: center bottom;
+     
+}
 h1{
-    position: absolute;
-    top: 50vh;
-    left: 10vw;
-    margin: auto;
-    display: block;
+    text-align: center;
 }
