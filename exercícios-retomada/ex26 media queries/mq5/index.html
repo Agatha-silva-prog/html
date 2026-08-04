@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu em media query</title>
-<style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
     *{
 margin: 0px;
 font-family: Arial, Helvetica, sans-serif;
+
     }
+   
     h1{
 text-align: center;
 padding-top: 10px
@@ -19,7 +22,11 @@ padding-top: 10px
     }
     menu{
         padding: 0px;
+        display: none;
+        
+      
     }
+ 
     ul{ list-style-type: none;
         padding-left: 0px;
      padding-bottom: 5px;   
@@ -30,12 +37,14 @@ padding-top: 10px
 li{
     background-color: rgb(70, 69, 69);
     color: rgb(221, 219, 219);
-    padding-right: 2px;
-    display: inline;
-    padding: 2px;
+    margin: 2px;
+    padding: 3px;
+    height: 23px;
+    
+   
 }
 body{
-    background-color: antiquewhite;
+    background-color: rgb(221, 221, 221);
 }
 main{
     background-color: white;
@@ -44,14 +53,63 @@ main{
     margin-top: 10px;
     margin-left:6px ;
     margin-right: 6px;
+    
 }
-p{
+main > p{
     padding: 8px 0px;
     text-indent: 14px;
+    line-height: 1.4em;
 }
 a{
     color: white;
     text-decoration: none;
+    display: block;
+}
+menu > ul > li:hover {
+background-color: rgba(197, 195, 195, 0.829);
+
+}
+
+
+#hmenu{
+    color: white;
+    background-color: black;
+    margin-left: 3px;
+    font-size: 3em;
+    border-radius: 10px;
+   
+    
+}
+#hmenu:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1800px){
+    main{
+        max-width: 900px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+
+
+    menu{
+display: block;
+    }
+    li{
+         padding-right: 2px;
+    display: inline;
+    padding: 2px;
+    
+    }
+    a{
+        display: inline;
+    }
+    i#hmenu{
+        display: none;
+        transition: 1s;
+    }
 }
 </style>
 
@@ -65,7 +123,9 @@ a{
 <body>
 <header>
     <h1>Meu site</h1>
-    <menu>
+    <i id="hmenu" class="material-icons"
+    onclick="clickMenu()">menu</i>
+    <menu id="menu">
         <ul>
 <li><a href="#">Opção 1</a></li>
 <li><a href="#">Opção 2</a></li>
@@ -80,9 +140,20 @@ a{
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corrupti Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque quidem quas minima accusantium dolorem nostrum? Cum optio iusto fuga aspernatur magni laborum architecto adipisci harum nostrum. Consectetur, unde itaque. consectetur in a repellendus sapiente, suscipit similique dolore debitis aspernatur, aut quidem deleniti tenetur quo commodi minus culpa laborum consequatur?</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque quidem quas minima accusantium dolorem nostrum? Cum optio iusto fuga aspernatur magni laborum architecto adipisci harum nostrum. Consectetur, unde itaque. Tenetur, nulla rerum! Aperiam hic atque, quisquam qui eum distinctio rerum dolorem soluta. Quam provident natus et asperiores saepe odit ad corporis.</p>
     <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque quidem quas minima accusantium dolorem nostrum? Cum optio iusto fuga aspernatur magni laborum architecto adipisci harum nostrum. Consectetur, unde itaque. consectetur adipisicing elit. Vel aliquid dignissimos temporibus dolorem provident in consequuntur. Illo dolorem ut nesciunt optio quibusdam, inventore soluta minus quaerat. Veniam odit deserunt facilis? </p>
+
+
 </main>
 
 
-    
+   <script>
+
+function clickMenu() {
+if (menu.style.display == 'block') {
+menu.style.display = 'none' } 
+else {
+    menu.style.display = 'block'
+    }
+}
+   </script> 
 </body>
 </html>
