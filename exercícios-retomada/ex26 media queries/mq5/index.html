@@ -85,7 +85,7 @@ background-color: rgba(197, 195, 195, 0.829);
 }
 
 
-@media screen and (min-width: 800px) and (max-width: 1800px){
+@media screen and (min-width: 768px){
     main{
         max-width: 900px;
         margin: auto;
@@ -120,7 +120,7 @@ display: block;
 
 
 </head>
-<body>
+<body onresize="mudaTamanho()">
 <header>
     <h1>Meu site</h1>
     <i id="hmenu" class="material-icons"
@@ -147,6 +147,15 @@ display: block;
 
    <script>
 
+    function mudaTamanho() {
+    if (window.innerWidth >= 768){
+        menu.style.display = 'block'
+    }
+    else {
+        menu.style.display = 'none'
+    }
+}
+
 function clickMenu() {
 if (menu.style.display == 'block') {
 menu.style.display = 'none' } 
@@ -154,6 +163,8 @@ else {
     menu.style.display = 'block'
     }
 }
+
+
    </script> 
 </body>
 </html>
