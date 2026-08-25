@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    header{
+        background-color: grey;
+        color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+    }
+    h1{
+
+
+    }
+    div.pai{
+        background-color: grey;
+display: flex;
+flex-flow:row wrap;
+justify-content: flex-end;
+
+    }
+    div.filho{
+flex-basis: 70px;
+background-color: black;
+padding: 3px;
+border-radius: 5px;
+text-align: center;
+margin: 2px;
+
+    }
+    div.filho:hover{
+        background-color: rgb(49, 49, 49);
+    }
+    main{
+background-color: white;
+margin: 10px;
+padding: 6px;
+border-radius: 10px;
+    }
+body{
+    background-color: rgb(228, 228, 228);
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width:768px ){  
+
+div.pai{
+    flex-flow: column;
+    height: 200px;
+}
+div.filho{
+    padding: 0px;
+    height: 20px;
+    border-radius: 0px;
+    
+}
+    
+}
+
+    
+    </style>
+
+
+
+
+</head>
+<body>
+<header>
+<h1>Meu site </h1>
+<div class="pai">  
+
+<div class="filho"><a href="">Opção 1</a></div>
+<div class="filho"><a href="">Opção 2</a></div>
+<div class="filho"><a href="">Opção 3</a></div>
+<div class="filho"><a href="">Opção 4</a></div>
+<div class="filho"><a href="">Opção 5</a></div>
+<div class="filho"><a href="">Opção 6</a></div>
+
+</div>
+
+</header>
+<main>
+<h2>Teste real de flexbox </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni perspiciatis cumque est, inventore nam mollitia quos iure explicabo veritatis voluptas ea atque minima dolorum molestias dicta qui enim ab.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat autem fugit perspiciatis? Doloremque placeat, corporis numquam eaque veritatis nam! Saepe pariatur ex expedita unde reiciendis quibusdam sapiente placeat provident illo.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati iste dolorum expedita, earum repellat laudantium quam, dolore non laborum quidem dolor impedit eaque, dolores quos. Cumque recusandae debitis aut?
+
+</p>
+
+
+</main>
+
+    
+</body>
+</html>
