@@ -9,33 +9,29 @@
         padding: 0px;
         margin: 0px;
     }
-    header{
-        background-color: grey;
-        color: white;
-padding-top: 10px;
-padding-bottom: 10px;
-    }
+   
     h1{
-
+padding-left: 3px;
 
     }
-    div.pai{
+    header.pai{
         background-color: grey;
 display: flex;
 flex-flow:row wrap;
-justify-content: flex-end;
-
+justify-content: space-between;
+ background-color: grey;
+        color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+padding-left: 3px;
     }
-    div.filho{
-flex-basis: 70px;
-background-color: black;
-padding: 3px;
-border-radius: 5px;
+    nav.filho{
 text-align: center;
 margin: 2px;
-
+display: flex;
     }
-    div.filho:hover{
+    a:hover{
         background-color: rgb(49, 49, 49);
     }
     main{
@@ -43,25 +39,42 @@ background-color: white;
 margin: 10px;
 padding: 6px;
 border-radius: 10px;
+
+
     }
 body{
     background-color: rgb(228, 228, 228);
     a{
+        padding: 3px;
+border-radius: 5px;
+        background-color: black;
         color: white;
         text-decoration: none;
+      margin: 3px;
+      
     }
 }
-@media screen and (max-width:768px ){  
-
-div.pai{
+@media screen and (max-width:500px ){  
+header.pai{
+    flex-flow: column;
+    align-items: center;
+}
+nav.filho{
     flex-flow: column;
     height: 200px;
+   
 }
-div.filho{
+a{
+    
+    width: 100vw;
     padding: 0px;
     height: 20px;
     border-radius: 0px;
     
+}
+h1{
+    
+    justify-content: center;
 }
     
 }
@@ -74,18 +87,17 @@ div.filho{
 
 </head>
 <body>
-<header>
+<header class="pai">
 <h1>Meu site </h1>
-<div class="pai">  
+<nav class="filho">  
 
-<div class="filho"><a href="">Opção 1</a></div>
-<div class="filho"><a href="">Opção 2</a></div>
-<div class="filho"><a href="">Opção 3</a></div>
-<div class="filho"><a href="">Opção 4</a></div>
-<div class="filho"><a href="">Opção 5</a></div>
-<div class="filho"><a href="">Opção 6</a></div>
-
-</div>
+ <a href="#"  >Opção 1</a>
+ <a href="#"  >Opção 2</a>
+ <a href="#"  >Opção 3</a>
+ <a href="#"  >Opção 4</a>
+ <a href="#"  >Opção 5</a>
+ <a href="#"  >Opção 6</a>
+</nav>
 
 </header>
 <main>
