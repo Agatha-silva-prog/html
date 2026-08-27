@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somente flexbox</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    div{
+        padding: 5px;
+        padding-bottom: 10px;
+        background-color: lightgrey;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div#container2{
+       
+    }
+    header,footer{
+        margin: 5px;
+    }
+    main{
+
+    }
+    h2{
+        justify-content: flex-start;
+    }
+    h2.reverso{
+        justify-content: flex-end;
+         align-items: flex-start;
+    }
+</style>
+
+
+</head>
+<body>
+<header>
+<h1>Exemplo de conteúdo flexivel </h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nam, obcaecati tenetur quidem, illum eum at voluptate quis deleniti dolores amet suscipit assumenda nisi ipsam necessitatibus labore quod blanditiis? Quod?</p>    
+</header>
+
+
+
+<main>
+<div>
+<h2>Mídia -> texto </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, numquam officia libero omnis sapiente nostrum porro rem quo id facilis dicta ipsa quidem consectetur voluptates. Atque inventore reprehenderit provident non!</p>
+<img src="#" alt="#">
+</div>
+<div id="container2" >
+<h2 class="reverso" >Texto -> mídia </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto soluta quos molestias at dolor nesciunt omnis, suscipit, a quod eveniet repellendus error sit? Voluptates quo animi dicta suscipit magnam.</p>
+<video src="#"></video>
+</div>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+<footer>
+    <h3>Conteúdo normal</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores id reiciendis reprehenderit earum quisquam velit iure, mollitia perferendis quo modi ex aliquam tempore! Debitis et explicabo culpa natus. Nostrum!</p> </footer>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
