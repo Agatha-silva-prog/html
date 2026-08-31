@@ -9,6 +9,10 @@
         padding: 0px;
         margin: 0px;
     }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.3em;
+    }
     div{
         padding: 5px;
         padding-bottom: 10px;
@@ -16,8 +20,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+    div#container1{
+        justify-content: space-between;
+                 align-items: center;
+
+    }
     div#container2{
-       
+       justify-content: space-between;
+        align-items: center;
     }
     header,footer{
         margin: 5px;
@@ -30,7 +40,16 @@
     }
     h2.reverso{
         justify-content: flex-end;
-         align-items: flex-start;
+    }
+    img{
+      align-self: auto;
+       width: 400px;
+       align-content: flex-start;
+    }
+    p{
+      padding: 5px;
+        align-content: flex-end;
+        max-width: 800px;
     }
 </style>
 
@@ -39,21 +58,21 @@
 <body>
 <header>
 <h1>Exemplo de conteúdo flexivel </h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nam, obcaecati tenetur quidem, illum eum at voluptate quis deleniti dolores amet suscipit assumenda nisi ipsam necessitatibus labore quod blanditiis? Quod?</p>    
+<p>Lorem ipsum, dolor sit amet loconsectetur adipisicing elit. Sunt nam, obcaecati tenetur quidem, illum eum at voluptate quis deleniti dolores amet suscipit assumenda nisi ipsam necessitatibus labore quod blanditiis? Quod?</p>    
 </header>
 
 
 
 <main>
-<div>
+<div id="container1">
 <h2>Mídia -> texto </h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, numquam officia libero omnis sapiente nostrum porro rem quo id facilis dicta ipsa quidem consectetur voluptates. Atque inventore reprehenderit provident non!</p>
-<img src="#" alt="#">
+<p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quaerat dolore? Molestias quas nisi consequuntur aperiam dolore excepturi. Similique perferendis accusantium enim laudantium quia deserunt suscipit unde labore explicabo. Deserunt? amet consectetur adipisicing elit. Soluta, numquam officia libero omnis sapiente nostrum porro rem quo id facilis dicta ipsa quidem consectetur voluptates. Atque inventore reprehenderit provident non!</p>
+<img src="imagens/pexels-mitbg000-11420230.jpg" alt="rolo de câmera, imagem para teste">
 </div>
 <div id="container2" >
 <h2 class="reverso" >Texto -> mídia </h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto soluta quos molestias at dolor nesciunt omnis, suscipit, a quod eveniet repellendus error sit? Voluptates quo animi dicta suscipit magnam.</p>
-<video src="#"></video>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ex maxime a voluptate totam, nisi porro quibusdam asperiores est beatae temporibus, repellat incidunt at voluptatum dolorem itaque officia. Placeat, et.elit. Vero iusto soluta quos molestias at dolor nesciunt omnis, suscipit, a quod eveniet repellendus error sit? Voluptates quo animi dicta suscipit magnam.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=PokLyX6cOQFnvY3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 
