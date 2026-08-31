@@ -17,39 +17,52 @@
         padding: 5px;
         padding-bottom: 10px;
         background-color: lightgrey;
-        display: flex;
-        flex-wrap: wrap;
+     
+       
+       
     }
-    div#container1{
-        justify-content: space-between;
-                 align-items: center;
-
+    div#container1{   
+           display: flex;           
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
     }
     div#container2{
-       justify-content: space-between;
-        align-items: center;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
     }
     header,footer{
         margin: 5px;
     }
     main{
-
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
-    h2{
-        justify-content: flex-start;
-    }
-    h2.reverso{
-        justify-content: flex-end;
-    }
+   div.texto{
+    flex: 1 1 600px;
+    
+   }
     img{
+        
       align-self: auto;
-       width: 400px;
+       width: 460px;
+       height: 460px;
        align-content: flex-start;
+      
+    }
+    iframe{
+    width: 460px;
+       display: block;
+        
+    }
+    div.midia{
+        flex: 1 0;
     }
     p{
       padding: 5px;
-        align-content: flex-end;
-        max-width: 800px;
+        
+        
     }
 </style>
 
@@ -65,14 +78,22 @@
 
 <main>
 <div id="container1">
+    <div class="texto">
 <h2>Mídia -> texto </h2>
-<p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quaerat dolore? Molestias quas nisi consequuntur aperiam dolore excepturi. Similique perferendis accusantium enim laudantium quia deserunt suscipit unde labore explicabo. Deserunt? amet consectetur adipisicing elit. Soluta, numquam officia libero omnis sapiente nostrum porro rem quo id facilis dicta ipsa quidem consectetur voluptates. Atque inventore reprehenderit provident non!</p>
+<p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, esse. Molestiae, doloremque, saepe exercitationem atque, quibusdam eos tempora aperiam eveniet impedit consectetur accusamus odio illo eligendi a dolore officia nobis.adipisicing elit. Placeat, quaerat dolore? Molestias quas nisi consequuntur aperiam dolore excepturi. Similique perferendis accusantium enim laudantium quia deserunt suscipit unde labore explicabo. Deserunt? amet consectetur adipisicing elit. Soluta, numquam officia libero omnis sapiente nostrum porro rem quo id facilis dicta ipsa quidem consectetur voluptates. Atque inventore reprehenderit provident non!</p>
+</div>
+<div class="midia">
 <img src="imagens/pexels-mitbg000-11420230.jpg" alt="rolo de câmera, imagem para teste">
 </div>
+</div>
 <div id="container2" >
+    <div class="texto">
 <h2 class="reverso" >Texto -> mídia </h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ex maxime a voluptate totam, nisi porro quibusdam asperiores est beatae temporibus, repellat incidunt at voluptatum dolorem itaque officia. Placeat, et.elit. Vero iusto soluta quos molestias at dolor nesciunt omnis, suscipit, a quod eveniet repellendus error sit? Voluptates quo animi dicta suscipit magnam.</p>
+<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde vel quos debitis quo, omnis deleniti et enim. Distinctio voluptatum odio ipsa sequi tempora animi dolorum dolore ullam repudiandae eum!consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ex maxime a voluptate totam, nisi porro quibusdam asperiores est beatae temporibus, repellat incidunt at voluptatum dolorem itaque officia. Placeat, et.elit. Vero iusto soluta quos molestias at dolor nesciunt omnis, suscipit, a quod eveniet repellendus error sit? Voluptates quo animi dicta suscipit magnam.</p>
+</div>
+<div class="midia">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=PokLyX6cOQFnvY3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </div>
 
 
