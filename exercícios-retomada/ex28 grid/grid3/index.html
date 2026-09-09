@@ -8,14 +8,13 @@
 div.container{
     border: 3px solid black;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    height: 400px;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr) 2fr;
+    height:400px ;
     gap: 5px;
-    
-    align-content: center;
-    justify-items: stretch;
-    justify-content: center;
+    place-items: center stretch;
+    place-content: center normal;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
 }
 div.item{
     border: 3px solid blueviolet;
@@ -36,6 +35,7 @@ div.item{
         <div class="item">G</div>
         <div class="item">H</div>
         <div class="item">I</div>
+        
     </div>
 </body>
 </html>
