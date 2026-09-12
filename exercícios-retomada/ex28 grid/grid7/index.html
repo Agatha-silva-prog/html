@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio grid</title>
+    <style>
+        div#container{
+display: grid;
+height: 600px;
+gap: 5px;
+grid-template: 1fr .5fr 3fr .5fr / .5fr 1fr .5fr;
+
+        }
+        div.item{
+            align-items:stretch;
+            border: 1px solid black;
+background-color:aquamarine;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+        }
+
+div#topo{
+grid-area: 1/1/2/4;
+padding-top: 50px;
+}
+div#menu{
+grid-area: 2/1/3/4;
+padding-top: 25px;
+
+}
+div#principal{
+grid-area: 3/1/4/3;
+padding-top: 150px;
+
+}
+div#secundario{
+grid-area: 3/3/4/4;
+padding-top: 150px;
+
+}
+div#rodape{
+grid-area: 4/1/5/-1;
+padding-top: 25px;
+
+}
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item" id="topo">Topo</div>
+        <div class="item" id="menu">Menu</div>
+        <div class="item" id="principal">Principal</div>
+        <div class="item" id="secundario">Secundario</div>
+        <div class="item" id="rodape">Rodape</div>
+    </div>
+
+
+
+
+
+</body>
+</html>
